@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Mixing Engineer Image Plugin API
+  version: "1.0.0"
+servers:
+  - url: "https://jonxster.github.io/MixingEngineer"
+paths:
+  /images/gain_knob:
+    get:
+      summary: Retrieve image URL for the gain knob on a mixing console
+      operationId: getGainKnobImage
+      responses:
+        '200':
+          description: A JSON object containing the image URL
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  image_url:
+                    type: string
+                    description: The URL of the image
+              examples:
+                example:
+                  value:
+                    image_url: "https://jonxster.github.io/MixingEngineer/images/gain_knob.jpg"
