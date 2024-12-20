@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Mixing Engineer Image Plugin",
+  "name_for_model": "mixing_engineer_images",
+  "description_for_human": "Provides images of mixing console elements.",
+  "description_for_model": "Use this plugin to retrieve images of mixing console parts. Returns a JSON object containing an image_url.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://jonxster.github.io/MixingEngineer/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://jonxster.github.io/MixingEngineer/images/logo.png",
+  "contact_email": "tombjornebark@gmail.com",
+  "legal_info_url": "https://jonxster.github.io/MixingEngineer/legal"
+}
